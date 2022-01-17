@@ -1,0 +1,38 @@
+[package]
+name = "zenoh_src"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+zenoh = { git = "https://github.com/eclipse-zenoh/zenoh.git", tag = "0.6.0-dev"}
+clap = "2.33.3"
+env_logger = "0.9.0" 
+
+
+[build-dependencies]
+rustc_version = "0.4.0"
+
+[[example]]
+name = "z_sub_thr_test"
+path = "examples/throughput/single_host/z_sub_thr_test.rs"
+
+[[example]]
+name = "z_pub_thr_test"
+path = "examples/throughput/single_host/z_pub_thr_test.rs"
+
+[profile.dev]
+debug = true
+opt-level = 0
+
+[profile.release]
+debug = false
+lto = "fat"
+codegen-units = 1
+opt-level = 3
+panic = "abort"
+
+
+
