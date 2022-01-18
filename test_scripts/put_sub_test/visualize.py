@@ -42,6 +42,6 @@ for f in result_files:
 plt.xscale("log", basex=2)
 plt.xticks(collect_payloadsize)
 plt.xlabel("payload size (Bytes)")
-plt.ylabel(unit)
+plt.ylabel("Throughput: "+unit)
 plt.grid()
 plt.show()
