@@ -1,6 +1,6 @@
 # Zenoh-perf-tests
 A repository for testing Zenoh performance
-## Recommand to follow these [guides]() to get consistent results:  
+## Recommand to follow these [guides](https://easyperf.net/blog/2019/08/02/Perf-measurement-environment-on-Linux) to get consistent results:  
 1. Disable turbo boost:  
 
 2. Set CPU affinity:  
