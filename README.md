@@ -17,5 +17,19 @@ A repository for testing Zenoh performance
 8. Do one dry run to warm the cache
 
 ## Architecture:
-The `test_scripts` folder: Shell scripts to build specific scenarios, and the visualization program  
+The `test_scripts` folder: Shell scripts to build specific scenarios, and the visualization programs  
 The `zenoh_src` folder: The primitive rust testing program which are used for test_scripts
+
+## Quick start:  
+Build rust executable files:  
+```
+cd zenoh_src
+cargo build --all-targets --release
+```
+Then move the executable files to the specific scenario folder:  
+```
+cd target/release/examples
+mv ./$executable_file ../../../../test_scripts
+```
+Finally, run the script:
+`./$script_name`
