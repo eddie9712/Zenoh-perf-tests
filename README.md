@@ -1,5 +1,5 @@
 # Zenoh-perf-tests
-`The repository is based on the commit b1dfb4e1fb41b012194f5613d8e0703b6af09214 (2022/1/18)`  
+`The repository is based on the zenoh commit b1dfb4e1fb41b012194f5613d8e0703b6af09214 (2022/1/18)`  
 A repository for testing Zenoh performance
 ## Recommand to follow these [guides](https://easyperf.net/blog/2019/08/02/Perf-measurement-environment-on-Linux) to get consistent results:  
 1. Disable turbo boost:  
