@@ -7,11 +7,11 @@ A repository for testing Zenoh performance
 2. Set CPU affinity:  
 `taskset -c $cpu_number $your_process`
 3. Set process priority: 
- `nice -n $priority_number $your_process`
+ `nice -n $priority_number $your_process`  
 ⚠️To set the CPU affinity and the process priority at the same time:    
 `nice -n $priority taskset -c $cpu_number $your_process`
 4. Disable hyperthreading: 
-`echo 0 | sudo tee /sys/devices/system/cpu/$cpu_num/online` 
+`echo 0 | sudo tee /sys/devices/system/cpu/$cpu_num/online`   
 ⚠️Generally, we can disable the odd cpu number (disable one thread in a physical core) 
 6. Set scaling_governor to "performance" 
 `echo performacne > /sys/devices/system/cpu/$cpu_num/cpufreq/scaling_governor` 
